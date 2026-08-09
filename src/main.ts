@@ -216,7 +216,6 @@ function getTaskButtons(status: string, index: number): string {
 
 function createTaskCard(task: Task, index: number): string {
     const isCompleted: boolean = task.status === "completed";
-
     return `
         <div class="group bg-white border border-gray-200 rounded-2xl p-5 shadow-sm mb-4">
 
@@ -226,8 +225,8 @@ function createTaskCard(task: Task, index: number): string {
                     #${("00" + (index + 1)).slice(-3)}
                 </p>
 
-                <div class="flex items-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-
+                <div class="flex items-center gap-3 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition  duration-300">
+                
                     <button
                         data-index="${index}"
                         data-action="edit"
