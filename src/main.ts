@@ -22,12 +22,12 @@ const descCount = document.querySelector("#descCount") as HTMLParagraphElement;
 const successToast = document.querySelector("#successToast") as HTMLDivElement;
 
 
-function openModal() {
+function openModal(): void {
     taskModal.classList.remove("hidden");
     taskModal.classList.add("flex");
 }
 
-function closeModal() {
+function closeModal(): void {
     taskModal.classList.remove("flex");
     taskModal.classList.add("hidden");
 }

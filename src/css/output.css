@@ -328,6 +328,9 @@
   .w-\[85\%\] {
     width: 85%;
   }
+  .w-\[92\%\] {
+    width: 92%;
+  }
   .w-full {
     width: 100%;
   }
@@ -762,6 +765,9 @@
     outline-style: none;
   }
   @media (width >= 40rem) {
+    .sm\:w-\[85\%\] {
+      width: 85%;
+    }
     .sm\:px-6 {
       padding-inline: calc(var(--spacing) * 6);
     }
